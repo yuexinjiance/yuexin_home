@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin:0%;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    /* 禁止所有元素的默认轮廓线 */
+    outline: none;
+    color: #fff;
+}
+/* 用伪类选择器定义一个全局的颜色属性 */
+:root{
+    --prime:#00ff34;
+}
+body{
+    background-color: #131b2b;
+}
+
+/* ------------------导航区域样式 ----------------------------------*/
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    padding: 30px 120px;
+    background-color: transparent;
+    z-index: 1111;
+    transition: 0.5s ease;
+}
+.logo{
+    font-size: 2.8em;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.logo B{
+    color: var(--prime);
+}
+ol{
+    display: flex;
+    margin: auto 0;
+}
+ol li{
+    list-style: none;
+    margin-right: 20px;
+}
+ol li a{
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+ol li:hover a{
+    color: var(--prime);
+}
+
+/* ------------------通用样式 ----------------------------------*/
+.view{
+    width: 100%;
+    min-height: 80vh;
+    position: relative;
+}
+
+/* ------------------home区域样式 ----------------------------------*/
+.home{
+    display: flex;
+    min-height: 120vh;
+    align-items: center;
+    justify-content: center;
+    /* 裁切一个多边形的区域 */
+    clip-path: polygon(0 0,100% 0, 100% 100%, 80% 95%, 0 100%);
+}
+.banner{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: url(images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    /* 设置背景的亮度为原来的40% */
+    filter: brightness(40%);
+}
+.highlights{
+    width: 70%;
+    position: relative;
+    display: inline-block;
+    z-index: 11;
+}
+.highlights h3{
+    display: inline;
+    font-size: 2vw;
+    padding: 5px 20px;
+    font-weight: lighter;
+    text-transform: capitalize;
+    border-left: 6px solid var(--prime);
+}
+.highlights h1{
+    font-size: 4vw;
+    text-align: center;
+    font-weight: normal;
+}
+.highlights .tagline{
+    color:#d7d7d7;
+    font-size: 1.2vw;
+    text-align: center;
+    font-weight: normal;
+}
+.highlights .join{
+    position: absolute;
+
+    /* 水平居中 */
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-weight: 800;
+    font-size: 1.5vw;
+    padding: 5px 20px;
+    margin-top: 1.2em;
+    color:var(--prime);
+    border: 2px solid var(--prime);
+    border-radius: 50px;
+    background:transparent;
+    transition: 0.3s ease;
+}
+
+.highlights .join:hover{
+    color:#8924cc;
+    cursor: pointer;
+    letter-spacing: 2.5px;
+    background: var(--prime);
+}
