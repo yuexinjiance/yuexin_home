@@ -38,10 +38,9 @@ body{
     font-size: 2em;
 }
 .logo{
-    font-size: 2.8em;
+    font-size: 2em;
     font-weight: 800;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+    letter-spacing: 5px;
     text-decoration: none;
 }
 .logo B{
@@ -113,11 +112,11 @@ ol li:hover a{
     height: 100%;
     width: 100%;
     position: absolute;
-    background: url(images/banner.jpg);
+    background: url(images/banner0.jpg);
     background-size: cover;
     background-position: center;
     /* 设置背景的亮度为原来的40% */
-    filter: brightness(40%);
+    filter: brightness(25%);
 }
 .highlights{
     width: 70%;
@@ -127,14 +126,14 @@ ol li:hover a{
 }
 .highlights h3{
     display: inline;
-    font-size: 2vw;
+    font-size: 1.5vw;
     padding: 5px 20px;
     font-weight: lighter;
     text-transform: capitalize;
     border-left: 6px solid var(--prime);
 }
 .highlights h1{
-    font-size: 4vw;
+    font-size: 2vw;
     text-align: center;
     font-weight: normal;
 }
@@ -143,6 +142,7 @@ ol li:hover a{
     font-size: 1.2vw;
     text-align: center;
     font-weight: normal;
+    margin-bottom: 10px;
 }
 .highlights .join{
     position: absolute;
@@ -177,26 +177,20 @@ ol li:hover a{
     position: relative;
     padding: 20px 70px;
 }
+.about .content .aboutme{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+}
 .about .content .cols p{
     font-size: 16px;
     margin-right: 5px;
-}
-.about .content .cols a{
-    position: relative;
-    top:20px;
-    color:#fff;
-    background: var(--prime);
-    padding: 5px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-.about .content .cols a:hover{
-    color:#000;
-    background: #fff;;
+    margin-bottom: 15px;
 }
 .about .content .cols .box{
     position: relative;
-    height: 550px;
+    height: 450px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
 }
 .about .content .cols .box img{
